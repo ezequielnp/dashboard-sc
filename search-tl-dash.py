@@ -9,7 +9,7 @@ import pandas as pd
 # -------------------------------------------------------------
 # 1. CARGA DE DATOS
 # -------------------------------------------------------------
-excel_path = r"C:\Dash\Search-Console\search-consoletl.xlsx" if os.path.exists(r"C:\Dash\Search-Console\search-consoletl.xlsx") else "search-consoletl.xlsx"
+excel_path = "search-consoletl.xlsx"
 
 xls = pd.ExcelFile(excel_path)
 df_g = pd.read_excel(xls, sheet_name='Gráfico')
@@ -77,6 +77,7 @@ app = dash.Dash(
     ],
     title="SEO Analytics Hub • e2visual"
 )
+server = app.server
 
 # Badges de filtros del archivo original
 filter_badges = [
