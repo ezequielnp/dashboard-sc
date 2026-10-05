@@ -78,6 +78,7 @@ app = dash.Dash(
     title="SEO Analytics Hub • e2visual"
 )
 server = app.server
+app = server
 
 # Badges de filtros del archivo original
 filter_badges = [
