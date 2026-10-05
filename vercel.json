@@ -1,0 +1,15 @@
+JSON
+{
+  "builds": [
+    {
+      "src": "search-tl-dash.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "search-tl-dash.py"
+    }
+  ]
+}
