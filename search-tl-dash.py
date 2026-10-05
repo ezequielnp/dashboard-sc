@@ -78,9 +78,7 @@ app = dash.Dash(
     title="SEO Analytics Hub • e2visual"
 )
 server = app.server
-app = server
-[tool.vercel]
-entrypoint = "search-tl-dash.py"
+app = dash_app.server
 # Badges de filtros del archivo original
 filter_badges = [
     html.Span(
