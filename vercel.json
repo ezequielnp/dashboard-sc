@@ -1,15 +1,8 @@
-JSON
 {
-  "builds": [
+  "rewrites": [
     {
-      "src": "search-tl-dash.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "search-tl-dash.py"
+      "source": "/(.*)",
+      "destination": "/api/index.py"
     }
   ]
 }
