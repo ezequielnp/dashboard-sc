@@ -79,7 +79,8 @@ app = dash.Dash(
 )
 server = app.server
 app = server
-
+[tool.vercel]
+entrypoint = "search-tl-dash.py"
 # Badges de filtros del archivo original
 filter_badges = [
     html.Span(
